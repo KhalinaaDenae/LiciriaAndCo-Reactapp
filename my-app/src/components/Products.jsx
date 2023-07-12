@@ -9,7 +9,7 @@ export const Products = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:9040/products')
+      .get('http://localhost:2040/products')
       .then((response) => {
         const productsWithUrls = response.data.map((product) => ({
           ...product,

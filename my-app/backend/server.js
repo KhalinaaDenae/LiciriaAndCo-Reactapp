@@ -22,7 +22,7 @@ app.get('/products', async (req, res) => {
   res.json(products); // Send response as JSON
 });
 
-app.listen(9040, () => {
+app.listen(2040, () => {
   console.log('Server is running on port 4000');
 });
 
