@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inria+Serif:wght@300&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inria+Serif:wght@300&family=La+Belle+Aurore&family=Raleway:wght@100&display=swap');
+
+.footer-section {
+    background-color: #D1AC65;
+    padding: 5px 20px;
+    color: #40323D;
+    font-family: 'La Belle Aurore', cursive;
+  }
+  .subscribe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center; /* Add this line to center the text */
+  }
+  
+  .subscribe-section h4 {
+    margin: 0; /* Remove the margin-right property */
+  }
+  
+  .subscribe-input {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    width: 300px;
+    margin: 20px auto; /* Add margin to separate the text from the input field */
+  }
+  .subscribe-input input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    background-color: transparent;
+  }
+  
+  .input-icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .column {
+    flex-basis: 50%;
+    text-align: center; /* Add this line to center the text inside the columns */
+  }
+  
+  .column h5 {
+    margin-bottom: 10px;
+  }
+  
+  .column ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .column li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-bottom h6 {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center; /* Add this line to center the social icons horizontally */
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .header{
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+  }

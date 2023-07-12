@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inria+Serif:wght@300&family=Raleway:wght@100&display=swap');
+
+.best-sellers {
+    background-color:#FAF7F2;
+    padding: 40px;
+    font-family: 'Cinzel', serif;
+  }
+  
+  .best-sellers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #40323D;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .best-seller-item {
+    text-align: center;
+  }
+  .bestSellerImg{
+    width: 250px;
+    height: 250px;
+  }
+  
+  .item-title {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .item-price {
+    font-size: 16px;
+    color: #777;
+  }
+  

@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inria+Serif:wght@300&family=La+Belle+Aurore&family=Raleway:wght@100&display=swap');
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  
+  .hero-content {
+    font-family: 'La Belle Aurore', cursive;
+    position: absolute;
+    top: 218px;
+    left: 16px;
+    text-align: center;
+    color: #faf7f2;
+
+  }
+  
+  .hero-content p {
+    color: #faf7f2;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    max-width: 700px;
+  }
+  
+  .shop-cta{
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  .shop-cta:hover{
+    color: #D1AC65;
+    cursor: pointer;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 32px;
+    }
+  
+    .shop-button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-content h1 {
+      font-size: 24px;
+    }
+  
+    .shop-button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  }
+  
