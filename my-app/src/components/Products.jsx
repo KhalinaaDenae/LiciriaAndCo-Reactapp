@@ -6,6 +6,8 @@ import imageUrls from '../data/imageUrls';
 
 export const Products = () => {
   const [products, setProducts] = useState([]);
+  const [categoryFilter, setCategoryFilter] = useState("all")
+  const categories = ["necklaces", "earrings", "bracelets"]
 
   useEffect(() => {
     axios
@@ -22,8 +24,13 @@ export const Products = () => {
 
   return (
     <div className='shop'>
-      <h1>Products</h1>
-      <div className='product-list'>
+      <h1 className='header'>Products</h1>
+      <div className='product-categories'>
+
+      {categories.map((category) => <h4> {category}</h4>)}
+
+      </div>
+           <div className='product-list'>
         {products.map((product) => (
           <div className='card' key={product.id}>
             <img className='product-image' src={product.imageUrl} alt='product' />
