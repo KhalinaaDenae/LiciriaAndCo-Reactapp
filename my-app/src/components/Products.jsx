@@ -3,7 +3,11 @@ import './styles/products.css';
 import axios from 'axios';
 import imageUrls from '../data/imageUrls';
 
+//   <div className='product-categories'>
 
+// {categories.map((category) => <h4> {category}</h4>)}
+
+// </div>
 export const Products = () => {
   const [products, setProducts] = useState([]);
   const [categoryFilter, setCategoryFilter] = useState("all")
@@ -18,18 +22,26 @@ export const Products = () => {
           imageUrl: imageUrls[product.id],
         }));
         setProducts(productsWithUrls);
+        console.log(products)
       })
       .catch((error) => console.error(error));
   }, []);
 
+  const ecommerceProducts = products
+
+  {ecommerceProducts.map((products) => {
+    console.log(products.category)
+  })}
+
+
+
+
+
+
   return (
     <div className='shop'>
       <h1 className='header'>Products</h1>
-      <div className='product-categories'>
-
-      {categories.map((category) => <h4> {category}</h4>)}
-
-      </div>
+   
            <div className='product-list'>
         {products.map((product) => (
           <div className='card' key={product.id}>
