@@ -8,10 +8,28 @@ import imageUrls from '../data/imageUrls';
 // {categories.map((category) => <h4> {category}</h4>)}
 
 // </div>
+
+//  const ecommerceProducts = products
+
+//{ecommerceProducts.map((products) => {
+  //console.log(products.category)
+  //let categories = products.category
+ // return categories
+//})}
+
+//useEffect(() => {
+  //let filteredProducts = categories ;
+
+  // if (category !== "all") {
+    //filteredProducts = filteredProducts.filter(product => product.category === category)
+  //}
+  //setProducts(filteredProducts)
+// })
 export const Products = () => {
   const [products, setProducts] = useState([]);
-  const [categoryFilter, setCategoryFilter] = useState("all")
+  const [category, setCategory] = useState("all")
   const categories = ["necklaces", "earrings", "bracelets"]
+
 
   useEffect(() => {
     axios
@@ -27,12 +45,8 @@ export const Products = () => {
       .catch((error) => console.error(error));
   }, []);
 
-  const ecommerceProducts = products
 
-  {ecommerceProducts.map((products) => {
-    console.log(products.category)
-  })}
-
+  
 
 
 
