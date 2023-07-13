@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./styles/products.css";
 import axios from "axios";
 import imageUrls from "../data/imageUrls";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 export const Products = () => {
   const [products, setProducts] = useState([]);
   const [initialProducts, setInitialProducts] = useState([]);
-  const categories = ["necklace", "earring", "bracelet", "all"];
+  const navigate = useNavigate();
+  const [categoryFilter, setCategoryFilter] = useState("all");
+  const categories = ["necklaces", "earrings", "bracelets"];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -47,8 +50,11 @@ export const Products = () => {
   };
 
   const handleCategoryClick = (category) => {
-    //setSelectedCategory(category);
     filterCategory(category);
+  };
+
+  const handleSingleDetailsClick = (id) => {
+    navigate(`/products/${id}`); // Redirect to SingleProductView component
   };
 
   return (
@@ -72,10 +78,12 @@ export const Products = () => {
             <h3 className="product-name">{product.name}</h3>
             <p className="product-description">{product.description}</p>
             <p className="product-price">${product.price}</p>
-            <Link style={{ textDecoration: "none" }} to="/ProductView">
-              {" "}
-              <button className="add-to-bag-button"> View Details </button>{" "}
-            </Link>
+            <button
+              className="add-to-bag-button"
+              onClick={() => handleSingleDetailsClick(product.id)}
+            >
+              View Details
+            </button>
           </div>
         ))}
       </div>

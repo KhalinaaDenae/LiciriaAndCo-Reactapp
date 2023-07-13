@@ -14,8 +14,15 @@ export async function getProducts() {
   return rows;
 }
 
-// get single product
+// get product category 
 export async function getCategory(category) {
   const [rows] = await pool.query('SELECT * FROM products WHERE category = ?', [category]);
+  return rows;
+}
+
+// get single product 
+
+export async function getProduct(id) {
+  const [rows] = await pool.query('SELECT * FROM products WHERE id = ?', [id]);
   return rows;
 }
