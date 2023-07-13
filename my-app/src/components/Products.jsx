@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./styles/products.css";
 import axios from "axios";
 import imageUrls from "../data/imageUrls";
-
+import { Link } from "react-router-dom";
 export const Products = () => {
   const [products, setProducts] = useState([]);
   const [initialProducts, setInitialProducts] = useState([]);
@@ -72,7 +72,10 @@ export const Products = () => {
             <h3 className="product-name">{product.name}</h3>
             <p className="product-description">{product.description}</p>
             <p className="product-price">${product.price}</p>
-            <button className="add-to-bag-button">View Details</button>
+            <Link style={{ textDecoration: "none" }} to="/ProductView">
+              {" "}
+              <button className="add-to-bag-button"> View Details </button>{" "}
+            </Link>
           </div>
         ))}
       </div>
