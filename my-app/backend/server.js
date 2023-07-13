@@ -1,5 +1,5 @@
 import express from 'express';
-import { getProduct, getProducts } from './db.js';
+import { getCategory, getProducts } from './db.js';
 import axios from 'axios';
 import cors from 'cors';
 const app = express();
@@ -22,14 +22,35 @@ app.get('/products', async (req, res) => {
   res.json(products); // Send response as JSON
 });
 
-app.listen(3080, () => {
+app.listen(7080, () => {
   console.log('Server is running on port 4000');
 });
 
 // // route to get single product (to be changed to get categories)
 // Route to get products by category
+//app.get('/products/:category', async (req, res) => {
+  //const category = req.params.category;
+  //const products = await getCategory(category);
+  //res.json(products); // Send response as JSON
+//});
+
+
+// Route to get products by category
 app.get('/products/:category', async (req, res) => {
   const category = req.params.category;
-  const products = await getProducts(category);
-  res.json(products); // Send response as JSON
+
+  try {
+    const products = await getCategory(category);
+
+    if (products.length === 0) {
+      // If no products found for the category, send a 404 response
+      res.status(404).json({ error: 'No products found for the specified category' });
+    } else {
+      // Send the products as a response
+      res.json(products);
+    }
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
 });
