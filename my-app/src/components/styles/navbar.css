@@ -36,9 +36,12 @@ nav {
     color: #FAF7F2;
     font-family: 'Inria Serif', serif;
     font-size: 1.3rem;
-
-
   }
+  .nav-items li:hover{
+    color: #D1AC65;
+    font-weight: bold;
+  }
+
   span{
     font-family: 'Inria Serif', serif;
  font-weight: 100;

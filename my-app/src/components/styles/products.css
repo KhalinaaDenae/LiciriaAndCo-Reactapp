@@ -1,35 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inria+Serif:wght@300&family=Raleway:wght@100&display=swap');
+
 .shop {
   text-align: center;
+ background-color:  #A19DA3;
+ margin: 0;
 }
-
+h1.header{
+  font-family: 'Cinzel', serif;
+  letter-spacing: 50px;
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0;
+  padding-top:20px ;
+  color: #40323D;
+}
 .product-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-
+.product-categories{
+  display: flex;
+  justify-content: center;
+  letter-spacing: 3px;
+  font-family: 'Raleway';
+  color: #40323D;
+}
+.product-categories h4{
+  padding: 10px;
+}
+.product-categories h4:hover{
+  color: #D1AC65;
+  font-weight: bolder;
+  font-family: 'Cinzel', serif;
+}
 .card {
-  width: 300px;
+  width: 400px;
   padding: 20px;
   border: 1px solid transparent;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: transparent;
 
 }
 
 .product-name {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
+  font-family: 'Cinzel', serif;
+  color: #40323D;
+  
 }
 
 .product-description {
   margin-top: 10px;
+  font-family: 'Raleway';
 }
 
 .product-price {
   margin-top: 10px;
   font-weight: bold;
+  font-family: 'Cinzel', serif;
+  color: #40323D;
+
 }
 .add-to-bag-button {
   background-color: transparent;
@@ -42,7 +75,9 @@
 
 .product-image {
   width: 100%;
-  height: 370px;
+  height: 400px;
   max-width: 100%;
   object-fit: cover;
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }

@@ -15,7 +15,7 @@ export async function getProducts() {
 }
 
 // get single product
-export async function getProduct(id) {
-  const [rows] = await pool.query('SELECT * FROM products WHERE id = ?', [id]);
+export async function getProduct(category) {
+  const [rows] = await pool.query('SELECT * FROM products WHERE category = ?', [category]);
   return rows;
 }
