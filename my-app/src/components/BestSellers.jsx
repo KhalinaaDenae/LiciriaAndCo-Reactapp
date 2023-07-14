@@ -12,7 +12,7 @@ const BestSellers = () => {
     <section className="best-sellers">
       <div className="best-sellers-container">
         <div className="slider-container">
-          <div className="header">
+          <div className="best-seller-header">
             <h2 className="section-title">SHOP NEW IN</h2>
             <p className="new-in-text">
               Stylish, sleek and glam pieces to elevate your personal style

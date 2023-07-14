@@ -13,6 +13,7 @@
   margin: 0 auto;
   width: 70vw;
   height: auto;
+  padding-bottom: 20px;
   max-width: 1300px;
 }
 .about-header {
@@ -85,4 +86,5 @@
   background-color: #cfc6c1;
   font-family: "Homemade Apple", cursive;
   text-align: center;
+  border-bottom: 2px solid #a78368;
 }
