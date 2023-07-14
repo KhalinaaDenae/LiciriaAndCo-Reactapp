@@ -24,5 +24,6 @@ export async function getCategory(category) {
 
 export async function getProduct(id) {
   const [rows] = await pool.query('SELECT * FROM products WHERE id = ?', [id]);
-  return rows;
+  return rows[0];
 }
+

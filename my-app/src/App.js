@@ -4,7 +4,7 @@ import './components/styles/contact.css'
 import { Shop }from './components/Shop.jsx'
 import {Cart} from './components/Cart.jsx'
 import {Products} from './components/Products'
-
+import { SingleProduct } from "./components/SingleProduct.jsx";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer.jsx';
 
@@ -18,6 +18,7 @@ function App() {
         <Route path='/' element={<Shop /> }/>
         <Route path='/Products' element={<Products /> }/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path="/products/:id" element={<SingleProduct />} />
         </Routes>
     </Router>
   </div>

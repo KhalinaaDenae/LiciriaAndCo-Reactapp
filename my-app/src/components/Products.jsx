@@ -3,13 +3,14 @@ import "./styles/products.css";
 import axios from "axios";
 import imageUrls from "../data/imageUrls";
 import { Link, useNavigate } from "react-router-dom";
+import { SingleProduct } from "./SingleProduct";
 
 export const Products = () => {
   const [products, setProducts] = useState([]);
   const [initialProducts, setInitialProducts] = useState([]);
   const navigate = useNavigate();
   const [categoryFilter, setCategoryFilter] = useState("all");
-  const categories = ["necklaces", "earrings", "bracelets"];
+  const categories = ["necklace", "earring", "bracelet", "all"];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,7 +37,7 @@ export const Products = () => {
 
     try {
       const response = await axios.get(
-        `http://localhost:7080/products/${category}`,
+        `http://localhost:1090/products/${category}`,
         { params: { category } }
       );
       const filteredProductsWithUrls = response.data.map((product) => ({

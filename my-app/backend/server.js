@@ -1,5 +1,5 @@
 import express from 'express';
-import { getCategory, getProducts } from './db.js';
+import { getCategory, getProduct, getProducts } from './db.js';
 import axios from 'axios';
 import cors from 'cors';
 const app = express();
@@ -22,18 +22,9 @@ app.get('/products', async (req, res) => {
   res.json(products); // Send response as JSON
 });
 
-app.listen(7080, () => {
+app.listen(1090, () => {
   console.log('Server is running on port 4000');
 });
-
-// // route to get single product (to be changed to get categories)
-// Route to get products by category
-//app.get('/products/:category', async (req, res) => {
-  //const category = req.params.category;
-  //const products = await getCategory(category);
-  //res.json(products); // Send response as JSON
-//});
-
 
 // Route to get products by category
 app.get('/products/:category', async (req, res) => {
@@ -43,14 +34,30 @@ app.get('/products/:category', async (req, res) => {
     const products = await getCategory(category);
 
     if (products.length === 0) {
-      // If no products found for the category, send a 404 response
       res.status(404).json({ error: 'No products found for the specified category' });
     } else {
-      // Send the products as a response
       res.json(products);
     }
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
   }
+});
+
+// Route to get a single product by ID
+app.get('/products/:id', async (req, res) => {
+  const id = req.params.id;
+  const product = await getProduct(id);
+
+  if (!product) {
+    res.status(404).json({ error: 'Product not found' });
+  } else {
+    res.json(product);
+  }
+});
+
+// Route to get all products
+app.get('/products', async (req, res) => {
+  const products = await getProducts();
+  res.json(products);
 });
