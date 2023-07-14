@@ -1,50 +1,45 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inria+Serif:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Homemade+Apple&family=Italianno&family=Marcellus&family=Philosopher:wght@400;700&display=swap");
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color: #52464F;
-    color: #FAF7F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #faf7f2;
+  color: #52464f;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-  }
-  
-  .logo {
-    flex-grow: 1;
-    font-family: 'Cinzel', serif;
-    font-size: 1.5rem;
-  }
-  
-  .logo h1 {
-    margin: 0;
-  }
-  
-  .nav-items {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    color: #FAF7F2;
-  }
-  
-  .nav-items li {
-    margin-left: 10px;
-    text-decoration: none;
-    color: #FAF7F2;
-    font-family: 'Inria Serif', serif;
-    font-size: 1.3rem;
-  }
-  .nav-items li:hover{
-    color: #D1AC65;
-    font-weight: bold;
-  }
+.logo {
+  font-family: "Italianno", cursive;
+  font-size: 5rem;
+}
 
-  span{
-    font-family: 'Inria Serif', serif;
- font-weight: 100;
-  }
+.logo h1 {
+  margin: 0;
+}
 
-  
+.nav-items {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #52464f;
+}
+
+.nav-items li {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #52464f;
+  font-family: "Marcellus", serif;
+  font-size: 2rem;
+}
+.nav-items li:hover {
+  color: #d1ac65;
+  font-weight: bold;
+}
+
+span {
+  font-family: "Inria Serif", serif;
+  font-weight: 100;
+}
