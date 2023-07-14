@@ -15,7 +15,7 @@ export const Products = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:7080/products");
+        const response = await axios.get("http://localhost:1090/products");
         const productsWithUrls = response.data.map((product) => ({
           ...product,
           imageUrl: imageUrls[product.id],
