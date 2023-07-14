@@ -4,18 +4,23 @@
 .social-media {
   font-family: "Marcellus", serif;
   background-color: #faf7f2;
-  padding: 40px 0;
-  margin: 0;
+  margin: 0 auto;
+  width: 100vw;
+  height: auto;
+  padding: 90px 0;
 }
 
 .social-media-container {
   margin: 0 auto;
-  width: 98vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
   text-align: center;
-  font-size: 34px;
+  font-size: 25px;
   margin-bottom: 20px;
   color: #40323d;
 }
@@ -23,10 +28,10 @@ h2 {
 .social-media-image-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 2px;
+  grid-gap: 3px;
 }
 
 .socialMediaImg {
-  width: 225px;
-  height: 255px;
+  width: 200px;
+  height: 200px;
 }
