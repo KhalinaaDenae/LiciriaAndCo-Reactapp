@@ -1,30 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inria+Serif:wght@300&family=Raleway:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inria+Serif:wght@300&family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Homemade+Apple&family=Italianno&family=Marcellus&family=Philosopher:wght@400;700&display=swap");
 
 .social-media {
-    padding: 20px;
-    font-family: 'Raleway', serif;
-    background-color: #e6dbca;
-  }
-  
-  .social-media-container {
-    margin: 0 auto;
-    max-width: 1000px;
-  }
-  
-  h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .social-media-image-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 4px;
-  }
-  
-  .socialMediaImg {
-width: 170px;
-height: 155px;
-  }
-  
+  font-family: "Marcellus", serif;
+  background-color: #faf7f2;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.social-media-container {
+  margin: 0 auto;
+  width: 98vw;
+}
+
+h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #40323d;
+}
+
+.social-media-image-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2px;
+}
+
+.socialMediaImg {
+  width: 225px;
+  height: 255px;
+}

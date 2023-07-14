@@ -54,7 +54,7 @@ const About = () => {
         </div>
       </div>
       <p className="quote">
-        More than just a jewelry brand,
+        " More than just a jewelry brand,
         <br /> we are a movement on a mission to revolutionize the jewelry
         experience.”
       </p>
