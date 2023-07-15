@@ -1,31 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Homemade+Apple&family=Italianno&family=Marcellus&family=Philosopher:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Homemade+Apple&family=Italianno&family=Marcellus&family=Philosopher:wght@400;700&family=Raleway:wght@100&display=swap");
 .shop {
   text-align: center;
-  background-color: #a19da3;
-  margin: 0;
+  background-color: #faf7f2;
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
 }
-h1.header {
-  font-family: "Cinzel", serif;
-  letter-spacing: 50px;
-  font-size: 4rem;
-  font-weight: 900;
-  margin: 0;
-  padding-top: 20px;
-  color: #40323d;
-}
+
 .product-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  text-align: left;
+  margin: 0 auto;
 }
+.filter-type {
+  font-family: "Marcellus", serif;
+  font-size: 1.8rem;
+  text-align: left;
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.category-item:hover {
+  color: #d1ac65;
+  font-weight: bold;
+}
+
 .product-categories {
   display: flex;
-  justify-content: center;
+  width: 90%;
   letter-spacing: 3px;
   font-family: "Raleway";
   color: #40323d;
+  flex-direction: column;
 }
 .product-categories h4 {
   padding: 10px;
@@ -34,6 +43,9 @@ h1.header {
   color: #d1ac65;
   font-weight: bolder;
   font-family: "Cinzel", serif;
+}
+.category-item {
+  text-align: start;
 }
 .card {
   width: 400px;
@@ -46,13 +58,14 @@ h1.header {
 .product-name {
   font-size: 25px;
   font-weight: bold;
-  font-family: "Cinzel", serif;
+  font-family: "Marcellus", serif;
+  text-transform: uppercase;
   color: #40323d;
 }
 
 .product-description {
   margin-top: 10px;
-  font-family: "Raleway";
+  font-family: "Marcellus", serif;
 }
 
 .product-price {
@@ -72,7 +85,7 @@ h1.header {
 
 .product-image {
   width: 100%;
-  height: 400px;
+  height: 500px;
   max-width: 100%;
   object-fit: cover;
   border-radius: 3px;

@@ -1,92 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inria+Serif:wght@300&family=Raleway:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inria+Serif:wght@300&family=La+Belle+Aurore&family=Raleway:wght@100&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Homemade+Apple&family=Italianno&family=Marcellus&family=Philosopher:wght@400;700&family=Raleway:wght@100&display=swap");
 .footer-section {
-    background-color: #D1AC65;
-    padding: 5px 20px;
-    color: #40323D;
-    font-family: 'La Belle Aurore', cursive;
-  }
-  .subscribe-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    text-align: center; /* Add this line to center the text */
-  }
-  
-  .subscribe-section h4 {
-    margin: 0; /* Remove the margin-right property */
-  }
-  
-  .subscribe-input {
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid #000;
-    width: 300px;
-    margin: 20px auto; /* Add margin to separate the text from the input field */
-  }
-  .subscribe-input input {
-    border: none;
-    outline: none;
-    flex-grow: 1;
-    background-color: transparent;
-  }
-  
-  .input-icon {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .footer-columns {
-    display: flex;
-    justify-content: center;
-    width: 90vw;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  
-  .column {
-    flex-basis: 50%;
-    text-align: center; /* Add this line to center the text inside the columns */
-  }
-  
-  .column h5 {
-    margin-bottom: 10px;
-  }
-  
-  .column ul {
-    padding: 0;
-    list-style: none;
-  }
-  
-  .column li {
-    margin-bottom: 5px;
-  }
-  
-  .footer-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-bottom h6 {
-    margin-bottom: 10px;
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center; /* Add this line to center the social icons horizontally */
-  }
-  
-  .icon {
-    font-size: 24px;
-    margin-right: 10px;
-  }
-  
-  .header{
-    font-family: 'Cinzel', serif;
-    font-size: 2rem;
-  }
+  background-color: #faf7f2;
+  margin: 0;
+  color: #40323d;
+  font-family: "La Belle Aurore", cursive;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Add this line to center the text */
+}
+
+.subscribe-section h4 {
+  margin: 0; /* Remove the margin-right property */
+}
+
+.subscribe-input {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #000;
+  width: 300px;
+  margin: 20px auto; /* Add margin to separate the text from the input field */
+}
+.subscribe-input input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.input-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.column {
+  flex-basis: 50%;
+}
+
+.column h5 {
+  margin-bottom: 10px;
+}
+
+.column ul {
+  padding: 0;
+  list-style: none;
+}
+
+.column li {
+  margin-bottom: 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-bottom h6 {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Add this line to center the social icons horizontally */
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.header {
+  text-align: start;
+  color: #c9ac73;
+  font-size: 2rem;
+  font-family: "Marcellus", serif;
+}
+.newsletter {
+  position: relative;
+  text-align: start;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: start;
+  top: 40px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+.footer-img {
+  width: 370px;
+  height: 250px;
+}
+.footer-input {
+  background: transparent;
+  color: #faf7f2;
+  border: 2px solid #faf7f2;
+  margin-bottom: 10px;
+}
+.footer-input::placeholder {
+  color: #faf7f2;
+}
+li {
+  list-style-type: none;
+  text-align: left;
+  font-family: "Marcellus", serif;
+}

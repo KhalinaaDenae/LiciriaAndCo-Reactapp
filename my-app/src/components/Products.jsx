@@ -4,13 +4,14 @@ import axios from "axios";
 import imageUrls from "../data/imageUrls";
 import { Link, useNavigate } from "react-router-dom";
 import { SingleProduct } from "./SingleProduct";
+import SocialMedia from "./BestSellersProductPage";
 
 export const Products = () => {
   const [products, setProducts] = useState([]);
   const [initialProducts, setInitialProducts] = useState([]);
   const navigate = useNavigate();
   const [categoryFilter, setCategoryFilter] = useState("all");
-  const categories = ["necklace", "earring", "bracelet", "all"];
+  const categories = ["Necklace", "Earring", "Bracelet", "all"];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -59,34 +60,48 @@ export const Products = () => {
   };
 
   return (
-    <div className="shop">
-      <h1 className="header">Products</h1>
-      <div className="product-categories">
-        {categories.map((category) => (
-          <h4 key={category} onClick={() => handleCategoryClick(category)}>
-            {category}
-          </h4>
-        ))}
-      </div>
-      <div className="product-list">
-        {products.map((product) => (
-          <div className="card" key={product.id}>
-            <img
-              className="product-image"
-              src={product.imageUrl}
-              alt="product"
-            />
-            <h3 className="product-name">{product.name}</h3>
-            <p className="product-description">{product.description}</p>
-            <p className="product-price">${product.price}</p>
-            <button
-              className="add-to-bag-button"
-              onClick={() => handleSingleDetailsClick(product.id)}
-            >
-              View Details
-            </button>
-          </div>
-        ))}
+    <div className="product-section">
+      <SocialMedia />
+      <div className="shop">
+        <div className="product-categories">
+          <h5 className="filter-type">
+            {" "}
+            Filter By <br />
+            Category{" "}
+          </h5>
+          {categories.map((category) => (
+            <ul>
+              <li
+                className="category-item"
+                key={category}
+                onClick={() => handleCategoryClick(category)}
+              >
+                {category}
+              </li>
+            </ul>
+          ))}
+          <h5 className="filter-type"> Sort By Price </h5>
+        </div>
+        <div className="product-list">
+          {products.map((product) => (
+            <div className="card" key={product.id}>
+              <img
+                className="product-image"
+                src={product.imageUrl}
+                alt="product"
+              />
+              <h3 className="product-name">{product.name}</h3>
+              <p className="product-description">{product.description}</p>
+              <p className="product-price">${product.price}</p>
+              <button
+                className="add-to-bag-button"
+                onClick={() => handleSingleDetailsClick(product.id)}
+              >
+                View Details
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
