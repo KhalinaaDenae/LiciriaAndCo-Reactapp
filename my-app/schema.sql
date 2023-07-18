@@ -14,20 +14,3 @@ INSERT INTO products (name, description, price,category, image_url)
 VALUES 
 ('necklace', 'gold chain', '500', 'necklace',  );
 
-UPDATE products SET image_url = '../images/product1.png' WHERE id = 1;
-UPDATE products SET image_url = 'https://example.com/image2.jpg' WHERE id = 2;
-UPDATE products SET image_url = 'https://example.com/image1.jpg' WHERE id = 3;
-UPDATE products SET image_url = 'https://example.com/image2.jpg' WHERE id = 4;
-
-UPDATE products SET image_url = 'https://example.com/image1.jpg' WHERE id = 5;
-UPDATE products SET image_url = 'https://example.com/image2.jpg' WHERE id = 6;
-
-UPDATE products SET image_url = 'https://example.com/image1.jpg' WHERE id = 7;
-UPDATE products SET image_url = 'https://example.com/image2.jpg' WHERE id = 8;
-
-UPDATE products SET image_url = 'https://example.com/image1.jpg' WHERE id = 9;
-UPDATE products SET image_url = 'https://example.com/image2.jpg' WHERE id = 10;
-
-UPDATE products SET image_url = 'https://example.com/image1.jpg' WHERE id = 11;
-UPDATE products SET image_url = 'https://example.com/image2.jpg' WHERE id = 12;
-
